@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- TEMA E ESTILOS GERAIS (Paleta Cinza e Azul) --- */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #121212; /* << SEU FUNDO ESCURO ORIGINAL */
+            color: #E0E0E0;            
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: #1E1E1E; /* << SEU HEADER CINZA ORIGINAL */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            box-sizing: border-box; 
+        }
+
+        nav a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00BFFF; /* << SUA COR DE DESTAQUE AZUL */
+        }
+        
+        /* --- SEÇÃO DO FORMULÁRIO DE CONTATO (COM CORES AJUSTADAS) --- */
+        #contact-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+
+        #contact-section h2 {
+            font-family: 'Lora', serif; /* Mantendo a fonte elegante para o título */
+            font-size: 3rem;
+            color: #FFFFFF;
+            margin-bottom: 40px;
+        }
+        
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+        
+        input, textarea {
+            background-color: #FFFFFF;
+            border: 3px solid #00BFFF; /* << BORDA COM DESTAQUE AZUL */
+            border-radius: 12px;
+            padding: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            box-shadow: 0 0 10px #00BFFF; /* << EFEITO DE BRILHO AZUL */
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #00BFFF; /* << BOTÃO COM FUNDO AZUL */
+            color: #FFFFFF;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #009ACD; /* << TOM DE AZUL MAIS ESCURO NO HOVER */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Davi Mayer</h1>
+        <nav>
+            <nav>
+    <a href="index.html">Sobre mim</a>
+    <a href="formacao.html">Formação</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contato.html">Contatos</a>
+</nav>
+        </nav>
+    </header>
+
+    <main id="contact-section">
+        <h2>Contato</h2>
+        
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+             
+            <label for="contato">Contato:</label>
+            <input type="contat" id="contato" name="contato" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua Mensagem" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+</body>
+</html>
