@@ -76,6 +76,55 @@
         margin-bottom: 15px; 
         }
         
+        /* CÓDIGO RESPONSIVO          */
+
+@media (max-width: 768px) {
+
+    
+    header {
+        flex-direction: column; 
+        text-align: center;     
+        padding: 20px;
+    }
+
+    nav {
+        margin-top: 15px; 
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    
+    section#about {
+        flex-direction: column; 
+        text-align: center;     
+        margin: 20px;           
+    }
+
+    section#about img {
+        margin-right: 0;        
+        margin-bottom: 20px;    
+    }
+
+    
+    section#portfolio, #contact-section {
+        margin: 20px;          
+        padding: 30px 20px;     
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    nav a {
+        display: block;    
+        margin: 10px 0;    
+    }
+}
     </style>
 </head>
 <body>
